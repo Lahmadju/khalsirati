@@ -2,9 +2,9 @@
   "name": "khalsiratii",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "khalsiratii.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon khalsiratii.js"
   },
   "keywords": [],
   "author": "",
