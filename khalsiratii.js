@@ -130,7 +130,7 @@ function handleButtonClicks(items, recordRequest) {
       if (item.type === 'social') {
         message = `Вот ссылка на ${item.name}: ${item.url}`;
       } else if (item.type === 'promo') {
-        message = `Название: ${item.name}\n\nОписание: ${item.description}\n\nСсылка: ${item.url} `;
+        message = `Название: ${item.name}\n\nАвтор: ${item.author}\n\nОписание: ${item.description}\n\nСтраниц: ${item.list}\n\nСсылка: ${item.url} `;
       }
       await ctx.reply(message);
     });
