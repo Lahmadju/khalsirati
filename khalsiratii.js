@@ -128,9 +128,9 @@ function handleButtonClicks(items, recordRequest) {
       await recordRequest(db, ctx.from.id, item.name);
       let message = '';
       if (item.type === 'social') {
-        message = `Вот ссылка на ${item.name}: ${item.url}`;
+        message = `*Вот ссылка на ${item.name}:* ${item.url}`;
       } else if (item.type === 'promo') {
-        message = `Название: ${item.name}\n\nАвтор: ${item.author}\n\nОписание: ${item.description}\n\nСтраниц: ${item.list}\n\nСсылка: ${item.url} `;
+        message = `*Название:* ${item.name}\n\n*Автор:* ${item.author}\n\n*Описание:* ${item.description}\n\n*Страниц:* ${item.list}\n\n*Ссылка:* ${item.url} `;
       }
       await ctx.reply(message);
     });
