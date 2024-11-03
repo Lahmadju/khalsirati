@@ -128,9 +128,9 @@ function handleButtonClicks(items, recordRequest) {
       await recordRequest(db, ctx.from.id, item.name);
       let message = '';
       if (item.type === 'social') {
-        message = `Вот ссылка на ${item.name}: ${item.url}`;
+        message = `<b><i>Вот ссылка на ${item.name}:</i></b> ${item.url}`;
       } else if (item.type === 'promo') {
-        message = `<b>Название:</b> ${item.name}\n\nАвтор: ${item.author}\n\nОписание: ${item.description}\n\nСтраниц: ${item.list}\n\nСсылка: ${item.url}`;
+        message = `<b><i>Название:</i></b> ${item.name}\n\n<b><i>Автор:</i></b> ${item.author}\n\n<b><i>Описание:</i></b> ${item.description}\n\n<b><i>Страниц:</i></b> ${item.list}\n\n<b><i>Ссылка:</i></b> ${item.url}`;
       }
       await ctx.reply(message, { parse_mode: 'HTML' });
     });
