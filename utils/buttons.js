@@ -1,6 +1,6 @@
 // Массив кнопок для каждой социальной сети
 const socialNetworks = [
-  { name: 'Telegram', url: 'https://t.me/khalsiratii', type: 'social' },
+  { name: 'Telegram', url: 'https://t.me/khalsirati', type: 'social' },
   { name: 'Instagram', url: 'https://instagram.com/khalsirati?igsh=MzRlODBiNWFlZA==', type: 'social' },
 ];
 
